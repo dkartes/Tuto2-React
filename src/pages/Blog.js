@@ -23,7 +23,7 @@ const Blog = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (content.length < 140) {
+    if (content.length < 40) {
       setError(true);
     } else {
       axios.post("http://localhost:3004/articles", {
